@@ -17,9 +17,14 @@ function addTask() {
     }
     input.value = '';
     saveData();
-    
 
 }
+
+input.addEventListener('keypress', function(e){
+    if(e.key === "Enter"){
+        addTask(); 
+    }
+})
 
 // function addTask(){
 //     const ul = document.querySelector('.list-container');
